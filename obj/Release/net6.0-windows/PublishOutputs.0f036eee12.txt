@@ -1,0 +1,5 @@
+D:\Pomodorable\Pomodorable.exe
+D:\Pomodorable\Pomodorable.dll
+D:\Pomodorable\Pomodorable.deps.json
+D:\Pomodorable\Pomodorable.runtimeconfig.json
+D:\Pomodorable\Pomodorable.pdb

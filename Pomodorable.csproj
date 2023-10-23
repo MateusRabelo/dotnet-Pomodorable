@@ -8,9 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="addButton1.png" />
     <None Remove="adicionar-botao.png" />
     <None Remove="bgWpp1.jpg" />
+    <None Remove="bgWpp2.jpg" />
+    <None Remove="bgWpp3.jpg" />
     <None Remove="botao-adicionar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="addButton1.png" />
+    <Resource Include="bgWpp2.jpg" />
+    <Resource Include="bgWpp3.jpg" />
   </ItemGroup>
 
 </Project>

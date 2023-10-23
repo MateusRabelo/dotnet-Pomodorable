@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pomodorable"
         mc:Ignorable="d"
-        Title="Pomodorable" Height="450" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center">
+        Title="Pomodorable" Height="450" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="" WindowStyle="None">
     <Grid>
         <Grid.Resources>
             <Style TargetType="ProgressBar">
@@ -31,7 +31,7 @@
                 </Style.Triggers>
             </Style>
         </Grid.Resources>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="87"/>
@@ -43,35 +43,33 @@
             <ColumnDefinition Width="581*"/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="bgMain" HorizontalAlignment="Center" Height="348" Margin="0,86,0,0" Grid.Row="1" VerticalAlignment="Top" Width="585" Stretch="Fill" Grid.Column="1" Grid.RowSpan="3" Source="img/background/bgWpp1.jpg"/>
+        <Image x:Name="bgMain" HorizontalAlignment="Center" Height="450" Grid.Row="1" VerticalAlignment="Top" Width="800" Source="/bgWpp3.jpg" Stretch="Fill" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
         <DockPanel LastChildFill="False" Margin="0,0,2,0" Grid.Row="1" Grid.RowSpan="3">
-            <ListBox DockPanel.Dock="Bottom" Height="334">
-                <ListBox.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FF04FFAC" Offset="0.307"/>
-                        <GradientStop Color="#FF278C8C" Offset="0.739"/>
-                    </LinearGradientBrush>
-                </ListBox.Background>
-                <Label Content="Task 1 Test" Height="49" Width="155" FontFamily="Bahnschrift SemiBold Condensed" FontSize="35"/>
+            <ListBox DockPanel.Dock="Bottom" Height="353" Margin="5" Background="#AF101010">
+                <Label Height="49" Width="178" FontFamily="Bahnschrift SemiBold Condensed" FontSize="15" Foreground="White">
+                    <CheckBox Content="Resolver Questões 1 e 2" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#B2FFFFFF" BorderBrush="#00000000" Foreground="White"/>
+                </Label>
             </ListBox>
         </DockPanel>
-        <DockPanel LastChildFill="False" Grid.Row="1" Background="#FF0C1613" HorizontalAlignment="Center" Width="800" Height="88" VerticalAlignment="Center" Grid.ColumnSpan="2">
-            <Label Content="Checklist" FontFamily="Bahnschrift SemiBold Condensed" FontSize="30" Background="Transparent" Foreground="White" VerticalContentAlignment="Center" RenderTransformOrigin="0.468,0.83" HorizontalContentAlignment="Center" DockPanel.Dock="Left" Width="220" BorderBrush="Black"/>
+        <DockPanel LastChildFill="False" Grid.Row="1" Background="#990C1613" HorizontalAlignment="Center" Width="800" Height="88" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <Label Content="Checklist" FontFamily="Bahnschrift SemiBold Condensed" FontSize="30" Background="Transparent" Foreground="White" VerticalContentAlignment="Center" RenderTransformOrigin="0.468,0.83" HorizontalContentAlignment="Center" DockPanel.Dock="Left" Width="218" BorderBrush="Black" Height="86"/>
             <Label x:Name="lblStatusMain" Content="Hora de focar!" FontFamily="Bahnschrift SemiBold Condensed" FontSize="30" Background="Transparent" Foreground="White" VerticalContentAlignment="Center" RenderTransformOrigin="0.468,0.83" HorizontalContentAlignment="Center" DockPanel.Dock="Left" Width="578" BorderBrush="Black" BorderThickness="1,0,0,0"/>
         </DockPanel>
         <Button HorizontalAlignment="Left" Margin="77,4,0,0" Grid.Row="3" Width="47" Height="46" VerticalAlignment="Top" BorderThickness="0,0,0,0" IsCancel="True" Cursor="Hand" ClickMode="Press">
+            <Button.Background>
+                <ImageBrush ImageSource="/addButton1.png" TileMode="Tile"/>
+            </Button.Background>
             <Button.FocusVisualStyle>
                 <Style/>
             </Button.FocusVisualStyle>
-            <Button.Background>
-                <ImageBrush ImageSource="img/components/addButton1.png" TileMode="Tile"/>
-            </Button.Background>
         </Button>
-        <Label x:Name="lblTimeStatus" Content="00:00" HorizontalAlignment="Center" Margin="0,41,0,0" Grid.Row="2" VerticalAlignment="Top" Height="114" Width="581" FontFamily="Arial Black" FontWeight="Bold" FontSize="100" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
-        <Button x:Name="btnPomodoro" Content="Pomodoro" HorizontalAlignment="Left" Margin="133,160,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Height="37" Width="96" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Cursor="Hand" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2" IsTabStop="False" Foreground="White"/>
-        <Button x:Name="btnShortBreak" HorizontalAlignment="Center" Margin="0,160,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Height="37" Width="94" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Content="Pausa Curta" Cursor="Hand" Background="#00DDDDDD" BorderBrush="White" Foreground="White" BorderThickness="2,2,2,2"/>
-        <Button x:Name="btnLongBreak" Content="Pausa Longa" VerticalAlignment="Top" Height="37" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Grid.Column="1" Margin="0,160,134,0" Grid.Row="2" HorizontalAlignment="Right" Width="94" Cursor="Hand" Background="#00DDDDDD" BorderBrush="White" Foreground="White" BorderThickness="2,2,2,2"/>
-        <ProgressBar Grid.Column="1" HorizontalAlignment="Center" Height="25" Grid.Row="3" VerticalAlignment="Center" Width="561" Value="0" Maximum="561" Background="Transparent" BorderBrush="White" BorderThickness="3" />
+        <Label x:Name="lblTimeStatus" Content="25:00" HorizontalAlignment="Center" Margin="0,41,0,0" Grid.Row="2" VerticalAlignment="Top" Height="114" Width="581" FontFamily="Arial Black" FontWeight="Bold" FontSize="100" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+        <Button x:Name="btnPomodoro" Content="Pomodoro" HorizontalAlignment="Left" Margin="133,160,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Height="37" Width="96" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Cursor="Hand" Background="#7F000000" BorderBrush="White" BorderThickness="2,2,2,2" IsTabStop="False" Foreground="White" Click="btnPomodoro_Click"/>
+        <Button x:Name="btnShortBreak" HorizontalAlignment="Center" Margin="0,160,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Height="37" Width="94" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Content="Pausa Curta" Cursor="Hand" Background="#7F000000" BorderBrush="White" Foreground="White" BorderThickness="2,2,2,2" Click="btnShortBreak_Click"/>
+        <Button x:Name="btnLongBreak" Content="Pausa Longa" VerticalAlignment="Top" Height="37" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Grid.Column="1" Margin="0,160,134,0" Grid.Row="2" HorizontalAlignment="Right" Width="94" Cursor="Hand" Background="#7F000000" BorderBrush="White" Foreground="White" BorderThickness="2,2,2,2" Click="btnLongBreak_Click"/>
+        <ProgressBar x:Name="progressBar" Grid.Column="1" HorizontalAlignment="Left" Height="25" Grid.Row="3" VerticalAlignment="Center" Width="523" Maximum="561" Background="Transparent" BorderBrush="White" BorderThickness="3" Margin="20,0,0,0" />
         <Label x:Name="lblStatusProgressBar" Content="Estado de foco" HorizontalAlignment="Center" Margin="0,0,0,50" Grid.Row="2" Width="561" FontFamily="Arial Black" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center" Height="32" VerticalAlignment="Bottom" Grid.Column="1" Grid.RowSpan="2" Foreground="White"/>
+        <Button x:Name="btnInitialize" Content="Start" HorizontalAlignment="Center" Margin="0,226,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Height="37" Width="95" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Cursor="Hand" Background="#7F000000" BorderBrush="White" BorderThickness="2,2,2,2" IsTabStop="False" Foreground="White" Click="btnInitialize_Click"/>
+        <Label x:Name="lblDebug" Content="debug label" HorizontalAlignment="Left" Margin="206,1,0,0" Grid.Row="2" VerticalAlignment="Top" Height="44" Width="277" FontFamily="Arial Black" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
