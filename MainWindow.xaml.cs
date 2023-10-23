@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,10 +13,21 @@ namespace Pomodorable
         private DispatcherTimer timer; // Declaração de um DispatcherTimer para atualização do tempo.
         private TimeSpan pomodoroTime; // Defina o tempo do Pomodoro
         private int maxDuration;
+        private ObservableCollection<TaskItem> tasks = new ObservableCollection<TaskItem>();
+
+
+        public class TaskItem
+        {
+            public string TaskName { get; set; }
+            public bool IsCompleted { get; set; }
+        }
 
         public MainWindow()
         {
             InitializeComponent();
+
+            lbCkeckList.ItemsSource = tasks;
+
 
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
@@ -184,5 +197,40 @@ namespace Pomodorable
 
         }
 
+        private void btnAddTask_Click(object sender, RoutedEventArgs e)
+        {
+            // Mostrar o pop-up para adicionar uma nova tarefa
+            popAddTaskContent.IsOpen = true;
+        }
+
+
+        private void btnAddTaskPopup_Click(object sender, RoutedEventArgs e)
+        {
+            string taskName = taskTextBox.Text;
+
+            if (!string.IsNullOrEmpty(taskName))
+            {
+                // Adicione a tarefa à lista de tarefas
+                tasks.Add(new TaskItem { TaskName = taskName, IsCompleted = false });
+
+                // Limpe o TextBox após adicionar a tarefa
+                taskTextBox.Text = string.Empty;
+
+                // Feche o pop-up
+                popAddTaskContent.IsOpen = false;
+            }
+        }
+
+        private void btnDeleteTask_Click(object sender, RoutedEventArgs e)
+        {
+            // Obtém o botão que foi clicado
+            Button button = (Button)sender;
+
+            // Obtém o item da tarefa associada a este botão
+            TaskItem taskToDelete = (TaskItem)button.DataContext;
+
+            // Remove a tarefa da coleção
+            tasks.Remove(taskToDelete);
+        }
     }
 }

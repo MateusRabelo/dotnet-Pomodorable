@@ -13,13 +13,17 @@
     <None Remove="bgWpp1.jpg" />
     <None Remove="bgWpp2.jpg" />
     <None Remove="bgWpp3.jpg" />
+    <None Remove="bgWpp4.jpg" />
     <None Remove="botao-adicionar.png" />
+    <None Remove="trash.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="addButton1.png" />
     <Resource Include="bgWpp2.jpg" />
     <Resource Include="bgWpp3.jpg" />
+    <Resource Include="bgWpp4.jpg" />
+    <Resource Include="trash.png" />
   </ItemGroup>
 
 </Project>
