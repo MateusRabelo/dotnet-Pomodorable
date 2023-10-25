@@ -1,0 +1,7 @@
+D:\Pomodorable\Pomodorable.pdb
+D:\Pomodorable\D3DCompiler_47_cor3.dll
+D:\Pomodorable\PenImc_cor3.dll
+D:\Pomodorable\PresentationNative_cor3.dll
+D:\Pomodorable\vcruntime140_cor3.dll
+D:\Pomodorable\wpfgfx_cor3.dll
+D:\Pomodorable\Pomodorable.exe

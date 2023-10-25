@@ -8,22 +8,143 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="addButton1.png" />
     <None Remove="adicionar-botao.png" />
     <None Remove="bgWpp1.jpg" />
-    <None Remove="bgWpp2.jpg" />
     <None Remove="bgWpp3.jpg" />
     <None Remove="bgWpp4.jpg" />
     <None Remove="botao-adicionar.png" />
+    <None Remove="clockSoundOnLightTheme.png" />
+    <None Remove="close16px.png" />
+    <None Remove="close512px.png" />
+    <None Remove="headsetOnLighTheme.png" />
+    <None Remove="img\components\addButtonDarkTheme.png" />
+    <None Remove="img\components\addButtonLightTheme.png" />
+    <None Remove="img\components\clockSoundO ffDarkTheme.png" />
+    <None Remove="img\components\clockSoundO nDarkTheme.png" />
+    <None Remove="img\components\clockSoundOffLightTheme.png" />
+    <None Remove="img\components\clockSoundOnLightTheme.png" />
+    <None Remove="img\components\close16px.png" />
+    <None Remove="img\components\close512px.png" />
+    <None Remove="img\components\headsetOnDarkTheme.png" />
+    <None Remove="img\components\headsetOnLighTheme.png" />
+    <None Remove="img\components\lofiOffLightTheme.png" />
+    <None Remove="img\components\lofiOnLightTheme.png" />
+    <None Remove="img\components\noiseSoundOffLightTheme.png" />
+    <None Remove="img\components\noiseSoundOnLightTheme.png" />
+    <None Remove="img\components\trashDarkTheme.png" />
+    <None Remove="img\components\trashLightTheme.png" />
+    <None Remove="img\components\volumeOffLightTheme.png" />
+    <None Remove="img\components\volumeOffNoneDarkTheme.png" />
+    <None Remove="img\components\VolumeOnFilledDarkTheme.png" />
+    <None Remove="img\components\volumeOnLightTheme.png" />
+    <None Remove="img\components\volumeOnNoneDarkTheme.png" />
+    <None Remove="img\icons\icoPomodarable512px.ico" />
+    <None Remove="lofiOffLightTheme.png" />
+    <None Remove="lofiOnLightTheme.png" />
+    <None Remove="noiseSoundOnLightTheme.png" />
+    <None Remove="noiseSoundWhiteTheme.png" />
+    <None Remove="sounds\sound\clockAlarmSoundEffect.mp3" />
+    <None Remove="sounds\sound\clockThickingSoundEffect.mp3" />
+    <None Remove="sounds\sound\clockTickingSoundEffect.m4a" />
+    <None Remove="sounds\sound\mouseClickSoundEffect.mp3" />
+    <None Remove="sounds\sound\noiseSoundEffect.mp3" />
+    <None Remove="stop_watch_rtc_icon.ico" />
     <None Remove="trash.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="addButton1.png" />
-    <Resource Include="bgWpp2.jpg" />
+    <Resource Include="img\components\headsetOnLighTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="bgWpp3.jpg" />
     <Resource Include="bgWpp4.jpg" />
+    <Resource Include="clockSoundOnLightTheme.png" />
+    <Resource Include="close16px.png" />
+    <Resource Include="close512px.png" />
+    <Resource Include="headsetOnLighTheme.png" />
+    <Resource Include="img\components\addButtonDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\clockSoundO ffDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\clockSoundO nDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\clockSoundOffLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\clockSoundOnLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\close16px.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\close512px.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="icoPomodarable512px.ico" />
+    <Resource Include="img\components\headsetOnDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\lofiOffLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\lofiOnLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\noiseSoundOffLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\noiseSoundOnLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\trashDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\trashLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\volumeOffLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\volumeOffNoneDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\VolumeOnFilledDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\volumeOnLightTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\components\volumeOnNoneDarkTheme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="lofiOffLightTheme.png" />
+    <Resource Include="lofiOnLightTheme.png" />
+    <Resource Include="noiseSoundOnLightTheme.png" />
+    <Resource Include="noiseSoundWhiteTheme.png" />
+    <Resource Include="sounds\sound\clockAlarmSoundEffect.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sounds\sound\clockThickingSoundEffect.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sounds\sound\mouseClickSoundEffect.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sounds\sound\noiseSoundEffect.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="stop_watch_rtc_icon.ico" />
     <Resource Include="trash.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="sounds\music\" />
   </ItemGroup>
 
 </Project>

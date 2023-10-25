@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qisc07aCmQtVfOQO6VgkDUmz0hwVt0XsYKvuf6vWlkpii1VWNSxATwDr6EM55yfPE3wWIO5Ey8jUxnMTz3bNkA==",
+  "success": true,
+  "projectFilePath": "D:\\projetos\\csharp_repo\\Auris\\Pomodorable\\Pomodorable.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mateu\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.22\\microsoft.netcore.app.runtime.win-x64.6.0.22.nupkg.sha512",
+    "C:\\Users\\Mateu\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.22\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.22.nupkg.sha512",
+    "C:\\Users\\Mateu\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.22\\microsoft.aspnetcore.app.runtime.win-x64.6.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}
