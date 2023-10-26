@@ -1,17 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-
-namespace Pomodorable
-{
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3133334bd471d24eb671c0dbba8bf425ec783c7ee169e5da64a286749e43c34
+size 344

@@ -1,9 +1,3 @@
-﻿<Application x:Class="Pomodorable.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Pomodorable"
-             StartupUri="MainWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e5b18dd7c55cf5336d6539b473d2236b7e5e5b3af712752622459861a2f058d
+size 376
