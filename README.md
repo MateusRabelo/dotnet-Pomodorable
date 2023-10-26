@@ -1,4 +1,14 @@
-# dotnet-Pomodorable
+# Pomodorable
+
+## <a name=“About the App”><a/> Seção
+## <a name=“How to Use”><a/> Seção
+## <a name=“Buttons Functions:”><a/> Seção
+## <a name=“Sond Buttons:”><a/> Seção
+## <a name=“Timer Buttons:”><a/> Seção
+## <a name=“Task Buttons:”><a/> Seção
+## <a name=“Checklist Buttons:”><a/> Seção
+## <a name=“Input Textboxes:”><a/> Seção
+## <a name=“Features”><a/> Seção
 
 ## About the App
 dotnet-Pomodorable is a simple native desktop Pomodoro app built with .NET and WPF. It was created to test my skills in a different technology.
